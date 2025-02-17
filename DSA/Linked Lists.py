@@ -24,6 +24,7 @@ print(f"Op1: {Head}")
 # Traversing the list -> O(n)
 curr = Head
 while curr:
+    
 #this while loop is basically saying that while the value of curr is valid and not a null/none value keep printing the next node
     print(f"Op2: {curr}")
     curr = curr.next

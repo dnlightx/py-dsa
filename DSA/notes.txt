@@ -72,3 +72,29 @@ Seperate Chaining
 Used to combat collisions in a hash table when hashing
 So its basically like having a linked list in a "bucket"
 A bucket is a space for each "index"
+
+Linear Probing
+Another way to combat collisions.
+Basically perfrom the inputs function, and if it's bucket is taken, move it to the next bucket, like that like that. 
+Looking up would be O(1)* because in the worst case scenario its O(n) but on average it's O(1)
+
+When deleting we have to mark that space by a special value, just so it doesn't break the lookup feature as it relies on previous inputs to find the next.
+
+
+Hash Maps
+basically hashsets but they can store data
+
+We're basically mapping each key:value and each key must be hashable
+
+
+things that are hashable - usually immutable
+Strings
+Integers
+Tuples
+
+Non hashable - usually mutable
+Arrays
+Dictionaries/hashmaps
+
+
+

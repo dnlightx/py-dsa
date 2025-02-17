@@ -2,6 +2,10 @@
 s = set()
 print(s)
 
+# To add and define the set at the same time use "{}"
+x = set({1, 2, 3})
+print(x)
+
 # Adding items to sets -> O(1)
 s.add(1)
 s.add(2)
@@ -12,7 +16,7 @@ print(s)
 if 1 in s:
     print("true")
 
-# removing elements -> O(1)
+# removing items -> O(1)
 s.remove(3) 
 print(s)
 
