@@ -8,6 +8,8 @@ print(b)
 if "e" in s:
     print("True")
 
+
+
 # Arrays
 A = [1, 2, 3]
 print(A)

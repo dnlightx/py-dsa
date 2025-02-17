@@ -1,7 +1,7 @@
 #Singly Linked Lists
 
 class SinglyNode:
-    def __init__(self, val, next=None):
+    def __init__(self, val, next=None):         
         self.val = val
         self.next = next
         
@@ -16,6 +16,8 @@ C = SinglyNode(4)
 Head.next = A
 A.next = B
 B.next = C
+
+#We don't need to assign C.next = None, because it's already defined by default at __init__(next = None)
 
 print(f"Op1: {Head}")
 

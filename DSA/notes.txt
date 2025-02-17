@@ -1,0 +1,74 @@
+Time and Space complexity
+Time
+Amount of time an algorithm takes to complete a function of the input size (n)
+
+O(1)	    Constant	    Executes in the same time, regardless of input size.
+O(logn)	    Logarithmic	    Execution time grows slowly as input size increases (e.g., Binary Search).
+O(n)	    Linear	        Execution time grows directly with input size (e.g., Traversing an array).
+O(nlogn)	Linearithmic	Slightly worse than linear (e.g., Merge Sort, Quick Sort).
+O(n²)	    Quadratic	    Performance degrades quickly (e.g., Bubble Sort, Selection Sort).
+O(2ⁿ)	    Exponential	    Extremely slow, grows rapidly (e.g., Recursive Fibonacci).
+O(n!)	    Factorial	    Worst-case growth rate (e.g., Traveling Salesman Problem).
+
+
+Space   
+Total Memory an algorithm uses
+
+O(1) -> fixed no of variables
+O(n) -> using an array of size n
+O(n²) -> using a 2D matrix of size n × n
+
+
+*Big O notation*
+Big O notation is a mathematical concept used in Data Structures and Algorithms (DSA) to describe the efficiency of an algorithm in terms of time complexity and space complexity.
+
+It's basically a way of measuring and comparing different algorithms and their efficiencies
+
+You might perform a certain function on an array and in the best case possible it's O(1) but we care about the the average or the case with the highest probability / worst case scenario
+
+
+
+*Static, Dynamic Arrays and Strings*
+
+Static Array
+Mutable
+Fixed Size
+Have to be contigious - This is why deleting is O(n)
+
+Dynamic Arrays
+Mutable
+Unfixed size
+
+Strings
+Fixed Size
+Immutable
+
+
+Linked Lists
+Each Value in a linked lists is a node and they each have a memory address. It's not necessarily contigious. They're sort of stored randomly with random hex codes in a computer at the bery basic level, so they don't have indices.
+
+The last value is always pointing to null/none
+The first value which is the head will also point to null/none in a doubly linked list
+
+(Singly Linked Lists)Class Node:
+node.next
+node.prev
+
+(Doubly Linked list) Class Node:
+node.val
+node.next
+node.prev
+
+*Hash Functions, Sets, & Maps*
+Hash Tables
+Used to implement hash sets and hashmaps
+
+They're especially good because looking up is only O(1)* even if you have a million items in the hash table because each input has a its unique has function and so in relation to the "million" items its only O(1). 
+
+In the worst case, it's O(n), but it's close to impossible and it only happens if all the items in the hashtable are colliding in the same bucket and so fall into the same linked list, which is highly unlikely
+
+
+Seperate Chaining
+Used to combat collisions in a hash table when hashing
+So its basically like having a linked list in a "bucket"
+A bucket is a space for each "index"
