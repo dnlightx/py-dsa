@@ -33,6 +33,7 @@ for x in s:
     
 # HashMaps / Dictionaries
 d = {"greg": 1, "steve": 2, "rob": 3}
+# you can map over what ever, lists, nested lists, pretty versatile
 print(d)
 
 # adding a new key -> O(1)
@@ -59,6 +60,7 @@ from collections import defaultdict
 default = defaultdict(list)
 default[2]
 print(default)
+#basically a default dict has a default value for when they key doesn't exist, which is 0 for int and an empty array for list instead of just bringing out a keyerror.
 
 #Counter
 from collections import Counter

@@ -33,7 +33,7 @@ You might perform a certain function on an array and in the best case possible i
 Static Array
 Mutable
 Fixed Size
-Have to be contigious - This is why deleting is O(n)
+Have to be contiguous - This is why deleting is O(n)
 
 Dynamic Arrays
 Mutable
@@ -45,7 +45,7 @@ Immutable
 
 
 Linked Lists
-Each Value in a linked lists is a node and they each have a memory address. It's not necessarily contigious. They're sort of stored randomly with random hex codes in a computer at the bery basic level, so they don't have indices.
+Each Value in a linked lists is a node and they each have a memory address. It's not necessarily contiguous. They're sort of stored randomly with random hex codes in a computer at the bery basic level, so they don't have indices.
 
 The last value is always pointing to null/none
 The first value which is the head will also point to null/none in a doubly linked list
@@ -86,7 +86,6 @@ basically hashsets but they can store data
 
 We're basically mapping each key:value and each key must be hashable
 
-
 things that are hashable - usually immutable
 Strings
 Integers
@@ -96,5 +95,11 @@ Non hashable - usually mutable
 Arrays
 Dictionaries/hashmaps
 
+Stacks and Queues
+Stacks - LIFO
+They can be implemented as arrays, such that we only care about the element on the top of the stack(which is technically the last element in the array)
 
+Queues - FIFO
+Usually implemented as a doubly linked list. Basically the exact opposite of a stack such that we care about the first element in the queue.
 
+They can be implemented as arrays, but dequeueing(popping at the beginining since its a queue) is O(n), because after popping, we still have to shift all elements to the right to make it contiguous

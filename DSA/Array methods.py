@@ -33,6 +33,9 @@ print(A)
 # Acessing an element - O(1)
 print(A[2])
 
+# Accesing the last element - O(1)
+print(A[-1])
+
 if 12 in A:
     print("True")
     
